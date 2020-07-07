@@ -48,6 +48,36 @@
       - send: "21"
       - expect: "Score: 0"
       - expect: _EOF_
+- case_4:
+    run: ./part2
+    script:
+      - expect: "Enter cards:"
+      - send: "h1"
+      - send: "hj"
+      - send: "."
+      - expect: "Enter moves:"
+      - send: "d"
+      - send: "d"
+      - send: "."
+      - expect: "Enter goal:"
+      - send: "21"
+      - expect: "Score: 0"
+      - expect: _EOF_
+- case_5:
+    run: ./part2
+    script:
+      - expect: "Enter cards:"
+      - send: "d1"
+      - send: "hj"
+      - send: "."
+      - expect: "Enter moves:"
+      - send: "d"
+      - send: "d"
+      - send: "."
+      - expect: "Enter goal:"
+      - send: "21"
+      - expect: "Score: 0"
+      - expect: _EOF_
 - cleanup:
     run: rm -f part2 part2.o part2.hi
     visible: false
