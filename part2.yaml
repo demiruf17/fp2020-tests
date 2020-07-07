@@ -1,0 +1,38 @@
+- init:
+    run: rm -f part2 part2.o part2.hi
+    visible: false
+- compile:
+    run: ghc part2.hs -o part2
+    blocker: true
+- case_1:
+    run: ./part2
+    script:
+      - expect: "Enter cards:"
+      - send: "db"
+      - send: "c2"
+      - send: "."
+      - expect: "Enter moves:"
+      - send: "d"
+      - send: "."
+      - expect: "Enter goal:"
+      - send: "40"
+      - expect: "part2: rank is unknown"
+      - expect: _EOF_
+    exit: 1
+- case_2:
+    run: ./part2
+    script:
+      - expect: "Enter cards:"
+      - send: "z1"
+      - send: "."
+      - expect: "Enter moves:"
+      - send: "d"
+      - send: "."
+      - expect: "Enter goal:"
+      - send: "40"
+      - expect: "part2: suit is unknown"
+      - expect: _EOF_
+    exit: 1
+- cleanup:
+    run: rm -f part2 part2.o part2.hi
+    visible: false
