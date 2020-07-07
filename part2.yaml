@@ -33,6 +33,21 @@
       - expect: "part2: suit is unknown"
       - expect: _EOF_
     exit: 1
+- case_3:
+    run: ./part2
+    script:
+      - expect: "Enter cards:"
+      - send: "hq"
+      - send: "hj"
+      - send: "."
+      - expect: "Enter moves:"
+      - send: "d"
+      - send: "d"
+      - send: "."
+      - expect: "Enter goal:"
+      - send: "21"
+      - expect: "Score: 0"
+      - expect: _EOF_
 - cleanup:
     run: rm -f part2 part2.o part2.hi
     visible: false
