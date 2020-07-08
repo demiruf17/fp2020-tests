@@ -1,0 +1,91 @@
+- init:
+    run: rm -f part3 part3.o part3.hi
+    visible: false
+
+- compile:
+    run: ghc part3.hs -o part3
+    blocker: true
+
+- case_150150023_1:
+    run: ./part3 "zoo"
+    points: 1
+    script:
+      - expect: "zoo" # timeout: 60
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_2:
+    run: ./part3 "on"
+    points: 1
+    script:
+      - expect: "no, on" # timeout: 60  
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_3:
+    run: ./part3 "i love you"
+    points: 1
+    script:
+      - expect: "Io Lev you, Io you Lev, Lev Io you, Lev you Io, olive you, you Io Lev, you Lev Io, you olive" # timeout: 60
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_4:
+    run: ./part3 "eat"
+    points: 1
+    script:
+      - expect: "ate, eat, tea" # timeout: 60
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_5:
+    run: ./part3 "mr erol"
+    points: 1
+    script:
+      - expect: "Mel Orr, Orr Mel, Orr elm, elm Orr" # timeout: 60
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_6:
+    run: ./part3 "erol"
+    points: 1
+    script:
+      - expect: "lore, role" # timeout: 60
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_7:
+    run: ./part3 " "
+    points: 1
+    script:
+      - expect: "There is no anagram in the dictionary" # timeout: 60
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_8:
+    run: ./part3 "a"
+    points: 1
+    script:
+      - expect: "There is no anagram in the dictionary" # timeout: 60
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_9:
+    run: ./part3 "haskell"
+    points: 1
+    script:
+      - expect: "Hal elks, Haskell, ask hell, elk lash, elks Hal, hell ask, lash elk" # timeout: 60
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_10:
+    run: ./part3 "python"
+    points: 1
+    script:
+      - expect: "Typhon, python" # timeout: 60
+      - expect: _EOF_  
+    exit: 0
+
+- cleanup:
+    run: rm -f part3 part3.o part3.hi
+    visible: false
