@@ -4,7 +4,7 @@
 - compile:
     run: ghc part2.hs -o part2
     blocker: true
-- case_1:
+- case_150150041_1:
     run: ./part2
     script:
       - expect: "Enter cards:"
@@ -19,7 +19,7 @@
       - expect: "part2: rank is unknown"
       - expect: _EOF_
     exit: 1
-- case_2:
+- case_150150041_2:
     run: ./part2
     script:
       - expect: "Enter cards:"
@@ -33,7 +33,7 @@
       - expect: "part2: suit is unknown"
       - expect: _EOF_
     exit: 1
-- case_3:
+- case_150150041_3:
     run: ./part2
     script:
       - expect: "Enter cards:"
@@ -48,7 +48,7 @@
       - send: "21"
       - expect: "Score: 0"
       - expect: _EOF_
-- case_4:
+- case_150150041_4:
     run: ./part2
     script:
       - expect: "Enter cards:"
@@ -63,7 +63,7 @@
       - send: "21"
       - expect: "Score: 0"
       - expect: _EOF_
-- case_5:
+- case_150150041_5:
     run: ./part2
     script:
       - expect: "Enter cards:"
