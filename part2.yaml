@@ -1,0 +1,83 @@
+- init:
+    run: rm -f part2 part2.o part2.hi
+    visible: false
+- compile:
+    run: ghc part2.hs -o part2
+    blocker: true
+- case_150150041_1:
+    run: ./part2
+    script:
+      - expect: "Enter cards:"
+      - send: "db"
+      - send: "c2"
+      - send: "."
+      - expect: "Enter moves:"
+      - send: "d"
+      - send: "."
+      - expect: "Enter goal:"
+      - send: "40"
+      - expect: "part2: rank is unknown"
+      - expect: _EOF_
+    exit: 1
+- case_150150041_2:
+    run: ./part2
+    script:
+      - expect: "Enter cards:"
+      - send: "z1"
+      - send: "."
+      - expect: "Enter moves:"
+      - send: "d"
+      - send: "."
+      - expect: "Enter goal:"
+      - send: "40"
+      - expect: "part2: suit is unknown"
+      - expect: _EOF_
+    exit: 1
+- case_150150041_3:
+    run: ./part2
+    script:
+      - expect: "Enter cards:"
+      - send: "hq"
+      - send: "hj"
+      - send: "."
+      - expect: "Enter moves:"
+      - send: "d"
+      - send: "d"
+      - send: "."
+      - expect: "Enter goal:"
+      - send: "21"
+      - expect: "Score: 0"
+      - expect: _EOF_
+- case_150150041_4:
+    run: ./part2
+    script:
+      - expect: "Enter cards:"
+      - send: "h1"
+      - send: "hj"
+      - send: "."
+      - expect: "Enter moves:"
+      - send: "d"
+      - send: "d"
+      - send: "."
+      - expect: "Enter goal:"
+      - send: "21"
+      - expect: "Score: 0"
+      - expect: _EOF_
+- case_150150041_5:
+    run: ./part2
+    script:
+      - expect: "Enter cards:"
+      - send: "d1"
+      - send: "hj"
+      - send: "."
+      - expect: "Enter moves:"
+      - send: "d"
+      - send: "d"
+      - send: "."
+      - expect: "Enter goal:"
+      - send: "21"
+      - expect: "Score: 0"
+      - expect: _EOF_
+- cleanup:
+    run: rm -f part2 part2.o part2.hi
+    visible: false
