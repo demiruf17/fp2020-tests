@@ -4,7 +4,7 @@
 - compile:
     run: ghc part2.hs -o part2
     blocker: true
-- case_1:
+- case_150140034_1:
     run: ./part2
     script:
       - expect: "Enter cards:"
@@ -23,7 +23,7 @@
       - send: "42"
       - expect: "Score: 3"
       - expect: _EOF_
-- case_2:
+- case_150140034_2:
     run: ./part2
     script:
       - expect: "Enter cards:"
@@ -39,7 +39,7 @@
       - expect: "part2: card not in list"
       - expect: _EOF_
     exit: 1
-- case_3:
+- case_150140034_3:
     run: ./part2
     script:
       - expect: "Enter cards:"
@@ -63,7 +63,7 @@
       - send: "42"
       - expect: "Score: 3"
       - expect: _EOF_
-- case_4:
+- case_150140034_4:
     run: ./part2
     script:
       - expect: "Enter cards:"
@@ -82,7 +82,7 @@
       - send: "40"
       - expect: "Score: 9"
       - expect: _EOF_
-- case_5:
+- case_150140034_5:
     run: ./part2
     script:
       - expect: "Enter cards:"
@@ -101,7 +101,7 @@
       - send: "25"
       - expect: "Score: 5"
       - expect: _EOF_
-- case_6:
+- case_150140034_6:
     run: ./part2
     script:
       - expect: "Enter cards:"

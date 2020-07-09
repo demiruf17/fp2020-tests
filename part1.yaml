@@ -4,163 +4,163 @@
 - compile:
     run: ghc part1.hs -o part1
     blocker: true
-- case_1:
+- case_150140034_1:
     run: ./part1
     script:
       - send: "sundays1 1901 2000"
       - expect: "171"
       - expect: _EOF_
-- case_2:
+- case_150140034_2:
     run: ./part1
     script:
       - send: "sundays1tr 1901 2000"
       - expect: "171"
       - expect: _EOF_
-- case_3:
+- case_150140034_3:
     run: ./part1
     script:
       - send: "sundays2 1901 2000"
       - expect: "171"
       - expect: _EOF_
-- case_4:
+- case_150140034_4:
     run: ./part1
     script:
       - send: "sundays1 1453 1923"
       - expect: "810"
       - expect: _EOF_
-- case_5:
+- case_150140034_5:
     run: ./part1
     script:
       - send: "sundays1tr 1453 1923"
       - expect: "810"
       - expect: _EOF_
-- case_6:
+- case_150140034_6:
     run: ./part1
     script:
       - send: "sundays2 1453 1923"
-      - expect: "807"
+      - expect: "810"
       - expect: _EOF_
-- case_7:
+- case_150140034_7:
     run: ./part1
     script:
       - send: "sundays1 1299 2020"
       - expect: "1244"
       - expect: _EOF_
-- case_8:
+- case_150140034_8:
     run: ./part1
     script:
       - send: "sundays1tr 1299 2020"
       - expect: "1244"
       - expect: _EOF_
-- case_9:
+- case_150140034_9:
     run: ./part1
     script:
       - send: "sundays2 1299 2020"
-      - expect: "1240"
+      - expect: "1244"
       - expect: _EOF_
-- case_10:
+- case_150140034_10:
     run: ./part1
     script:
       - send: "sundays1 571 632"
       - expect: "107"
       - expect: _EOF_
-- case_11:
+- case_150140034_11:
     run: ./part1
     script:
       - send: "sundays1tr 571 632"
       - expect: "107"
       - expect: _EOF_
-- case_12:
+- case_150140034_12:
     run: ./part1
     script:
       - send: "sundays2 571 632"
       - expect: "107"
       - expect: _EOF_
-- case_13:
+- case_150140034_13:
     run: ./part1
     script:
       - send: "sundays1 1881 1938"
       - expect: "100"
       - expect: _EOF_
-- case_14:
+- case_150140034_14:
     run: ./part1
     script:
       - send: "sundays1tr 1881 1938"
       - expect: "100"
       - expect: _EOF_
-- case_15:
+- case_150140034_15:
     run: ./part1
     script:
       - send: "sundays2 1881 1938"
-      - expect: "99"
+      - expect: "100"
       - expect: _EOF_
-- case_16:
+- case_150140034_16:
     run: ./part1
     script:
       - send: "sundays1 1071 2071"
       - expect: "1722"
       - expect: _EOF_
-- case_17:
+- case_150140034_17:
     run: ./part1
     script:
       - send: "sundays1tr 1071 2071"
       - expect: "1722"
       - expect: _EOF_
-- case_18:
+- case_150140034_18:
     run: ./part1
     script:
       - send: "sundays2 1071 2071"
-      - expect: "1719"
+      - expect: "1722"
       - expect: _EOF_
-- case_19:
+- case_150140034_19:
     run: ./part1
     script:
       - send: "sundays1 111 1111"
       - expect: "1723"
       - expect: _EOF_
-- case_20:
+- case_150140034_20:
     run: ./part1
     script:
       - send: "sundays1tr 111 1111"
       - expect: "1723"
       - expect: _EOF_
-- case_21:
+- case_150140034_21:
     run: ./part1
     script:
       - send: "sundays2 111 1111"
-      - expect: "1718"
+      - expect: "1723"
       - expect: _EOF_
-- case_22:
+- case_150140034_22:
     run: ./part1
     script:
       - send: "sundays1 999 1999"
       - expect: "1722"
       - expect: _EOF_
-- case_23:
+- case_150140034_23:
     run: ./part1
     script:
       - send: "sundays1tr 999 1999"
       - expect: "1722"
       - expect: _EOF_
-- case_24:
+- case_150140034_24:
     run: ./part1
     script:
       - send: "sundays2 999 1999"
       - expect: "1722"
       - expect: _EOF_
-- case_25:
+- case_150140034_25:
     run: ./part1
     script:
       - send: "sundays1 678 3456"
       - expect: "4779"
       - expect: _EOF_
-- case_26:
+- case_150140034_26:
     run: ./part1
     script:
       - send: "sundays1tr 678 3456"
       - expect: "4779"
       - expect: _EOF_
-- case_27:
+- case_150140034_27:
     run: ./part1
     script:
       - send: "sundays2 678 3456"
