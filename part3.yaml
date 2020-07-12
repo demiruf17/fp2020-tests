@@ -117,13 +117,13 @@
 - case_150150133_1:
     run: ./part3 "team"
     script:
-      - expect: "am, et" # timeout: 30
-      - expect: "at, em" # timeout: 30
-      - expect: "at, me" # timeout: 30
-      - expect: "em, at" # timeout: 30
-      - expect: "et, am" # timeout: 30
+      - expect: "am et" # timeout: 30
+      - expect: "at em" # timeout: 30
+      - expect: "at me" # timeout: 30
+      - expect: "em at" # timeout: 30
+      - expect: "et am" # timeout: 30
       - expect: "mate" # timeout: 30
-      - expect: "me, at" # timeout: 30
+      - expect: "me at" # timeout: 30
       - expect: "meat" # timeout: 30
       - expect: "meta" # timeout: 30
       - expect: "tame" # timeout: 30
@@ -171,6 +171,7 @@
 - case_150150133_7_nothing:
     run: ./part3 "xy"
     script:
+      - expect: "There is no anagram in the dictionary"
       - expect: _EOF_  
     exit: 0
 - case_150150133_8_only_one:
@@ -182,15 +183,15 @@
 - case_150150133_9_sentence:
     run: ./part3 "i can fly"
     script:
-      - expect: "Cain, fly" # timeout: 30
-      - expect: "Inca, fly" # timeout: 30
-      - expect: "clay, fin" # timeout: 30
+      - expect: "Cain fly" # timeout: 30
+      - expect: "Inca fly" # timeout: 30
+      - expect: "clay fin" # timeout: 30
       - expect: "fancily" # timeout: 30
-      - expect: "fin, clay" # timeout: 30
-      - expect: "fin, lacy" # timeout: 30
-      - expect: "fly, Cain" # timeout: 30
-      - expect: "fly, Inca" # timeout: 30
-      - expect: "lacy, fin" # timeout: 30
+      - expect: "fin clay" # timeout: 30
+      - expect: "fin lacy" # timeout: 30
+      - expect: "fly Cain" # timeout: 30
+      - expect: "fly Inca" # timeout: 30
+      - expect: "lacy fin" # timeout: 30
       - expect: _EOF_  
     exit: 0
     
