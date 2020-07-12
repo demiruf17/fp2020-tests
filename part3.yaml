@@ -1,0 +1,112 @@
+- init:
+    run: rm -f part3 part3.o part3.hi
+    visible: false
+
+- compile:
+    run: ghc part3.hs -o part3
+    blocker: true
+
+- case_150150023_1:
+    run: ./part3 "zoo"
+    points: 1
+    script:
+      - expect: "zoo" # timeout: 30
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_2:
+    run: ./part3 "on"
+    points: 1
+    script:
+      - expect: "no"  # timeout: 30  
+      - expect: "on"  # timeout: 30  
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_3:
+    run: ./part3 "i love you"
+    points: 1
+    script:
+      - expect: "Io Lev you"  # timeout: 30
+      - expect: "Io you Lev"  # timeout: 30
+      - expect: "Lev Io you"  # timeout: 30
+      - expect: "Lev you Io"  # timeout: 30
+      - expect: "olive you"   # timeout: 30
+      - expect: "you Io Lev"  # timeout: 30
+      - expect: "you Lev Io"  # timeout: 30
+      - expect: "you olive"   # timeout: 30
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_4:
+    run: ./part3 "eat"
+    points: 1
+    script:
+      - expect: "ate" # timeout: 30  
+      - expect: "eat" # timeout: 30  
+      - expect: "tea" # timeout: 30
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_5:
+    run: ./part3 "mr erol"
+    points: 1
+    script:
+      - expect: "Mel Orr" # timeout: 30 
+      - expect: "Orr Mel" # timeout: 30  
+      - expect: "Orr elm" # timeout: 30  
+      - expect: "elm Orr" # timeout: 30
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_6:
+    run: ./part3 "erol"
+    points: 1
+    script:
+      - expect: "lore" # timeout: 30
+      - expect: "role" # timeout: 30
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_7:
+    run: ./part3 " "
+    points: 1
+    script:
+      - expect: "There is no anagram in the dictionary" # timeout: 30
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_8:
+    run: ./part3 "a"
+    points: 1
+    script:
+      - expect: "There is no anagram in the dictionary" # timeout: 30
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_9:
+    run: ./part3 "haskell"
+    points: 1
+    script:
+      - expect: "Hal elks" # timeout: 30
+      - expect: "Haskell"  # timeout: 30
+      - expect: "ask hell" # timeout: 30
+      - expect: "elk lash" # timeout: 30
+      - expect: "elks Hal" # timeout: 30
+      - expect: "hell ask" # timeout: 30
+      - expect: "lash elk" # timeout: 30
+      - expect: _EOF_  
+    exit: 0
+
+- case_150150023_10:
+    run: ./part3 "python"
+    points: 1
+    script:
+      - expect: "Typhon" # timeout: 30
+      - expect: "python" # timeout: 30
+      - expect: _EOF_  
+    exit: 0
+
+- cleanup:
+    run: rm -f part3 part3.o part3.hi
+    visible: false
