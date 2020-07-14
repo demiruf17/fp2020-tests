@@ -1392,7 +1392,220 @@
       - expect: "you sick me me" # timeout: 60
       - expect: _EOF_
     exit: 0
-  
+- case_150170710_0:
+    run: ./part3 "monoid"
+    points: 1
+    script:
+      - expect: "din moo"  # timeout: 30
+      - expect: "domino"  # timeout: 30
+      - expect: "doom in"  # timeout: 30
+      - expect: "in doom"  # timeout: 30
+      - expect: "in mood"   # timeout: 30
+      - expect: "moo din"  # timeout: 30
+      - expect: "mood in"  # timeout: 30
+      - expect: _EOF_  
+    exit: 0
+- case_150170710_1:
+    run: ./part3 "spider"
+    points: 1
+    script:
+      - expect: "De rips" # timeout: 30
+      - expect: "Des rip" # timeout: 30
+      - expect: "Dis per" # timeout: 30
+      - expect: "Ed rips" # timeout: 30
+      - expect: "dips re" # timeout: 30
+      - expect: "per Dis" # timeout: 30
+      - expect: "pi reds" # timeout: 30
+      - expect: "prides"  # timeout: 30
+      - expect: "re dips" # timeout: 30
+      - expect: "red sip" # timeout: 30
+      - expect: "reds pi" # timeout: 30
+      - expect: "rip Des" # timeout: 30
+      - expect: "rips De" # timeout: 30
+      - expect: "rips Ed" # timeout: 30
+      - expect: "sip red" # timeout: 30
+      - expect: "spider"  # timeout: 30
+      - expect: _EOF_  
+    exit: 0
+- case_150170710_2:
+    run: ./part3 "monarch"
+    points: 1
+    script:
+      - expect: "Cohn arm" # timeout: 30
+      - expect: "Cohn ram" # timeout: 30
+      - expect: "Mac horn" # timeout: 30
+      - expect: "Mach Ron" # timeout: 30
+      - expect: "Mach nor" # timeout: 30
+      - expect: "Mohr can" # timeout: 30
+      - expect: "Ron Mach" # timeout: 30
+      - expect: "arm Cohn" # timeout: 30
+      - expect: "cam horn" # timeout: 30
+      - expect: "can Mohr" # timeout: 30
+      - expect: "charm no" # timeout: 30
+      - expect: "charm on" # timeout: 30
+      - expect: "con harm" # timeout: 30
+      - expect: "corn ham" # timeout: 30
+      - expect: "ham corn" # timeout: 30
+      - expect: "harm con" # timeout: 30
+      - expect: "horn Mac" # timeout: 30
+      - expect: "horn cam" # timeout: 30
+      - expect: "march no" # timeout: 30
+      - expect: "march on" # timeout: 30
+      - expect: "monarch"  # timeout: 30
+      - expect: "no charm" # timeout: 30
+      - expect: "no march" # timeout: 30
+      - expect: "nor Mach" # timeout: 30
+      - expect: "on charm" # timeout: 30
+      - expect: "on march" # timeout: 30
+      - expect: "ram Cohn" # timeout: 30
+      - expect: _EOF_  
+    exit: 0
+- case_150170710_3:
+    run: ./part3 "jasmine"
+    points: 1
+    script:
+      - expect: "James in"  #timeout: 30
+      - expect: "Janis em"  #timeout: 30
+      - expect: "Janis me"  #timeout: 30
+      - expect: "Jim Sean"  #timeout: 30
+      - expect: "Jim as en" #timeout: 30
+      - expect: "Jim en as" #timeout: 30
+      - expect: "Jim sane"  #timeout: 30
+      - expect: "Sean Jim"  #timeout: 30
+      - expect: "as Jim en" #timeout: 30
+      - expect: "as en Jim" #timeout: 30
+      - expect: "em Janis"  #timeout: 30
+      - expect: "en Jim as" #timeout: 30
+      - expect: "en as Jim" #timeout: 30
+      - expect: "en is jam" #timeout: 30
+      - expect: "en jam is" #timeout: 30
+      - expect: "in James"  #timeout: 30
+      - expect: "is en jam" #timeout: 30
+      - expect: "is jam en" #timeout: 30
+      - expect: "jam en is" #timeout: 30
+      - expect: "jam is en" #timeout: 30
+      - expect: "jam sine"  #timeout: 30
+      - expect: "me Janis"  #timeout: 30
+      - expect: "sane Jim"  #timeout: 30
+      - expect: "sine jam"  #timeout: 30
+      - expect: _EOF_  
+    exit: 0
+- case_150170710_4:
+    run: ./part3 "printer"
+    points: 1
+    script:
+      - expect: "err pint" #timeout: 30
+      - expect: "pint err" #timeout: 30
+      - expect: "print re" #timeout: 30
+      - expect: "printer"  #timeout: 30
+      - expect: "re print" #timeout: 30
+      - expect: "rent rip" #timeout: 30
+      - expect: "reprint"  #timeout: 30
+      - expect: "rip rent" #timeout: 30
+      - expect: _EOF_  
+    exit: 0
+- case_150170710_5:
+    run: ./part3 "speaker"
+    points: 1
+    script:
+      - expect: "Karp see" #timeout: 30
+      - expect: "ark seep" #timeout: 30
+      - expect: "ask peer" #timeout: 30
+      - expect: "eke pars" #timeout: 30
+      - expect: "eke raps" #timeout: 30
+      - expect: "eke rasp" #timeout: 30
+      - expect: "ekes par" #timeout: 30
+      - expect: "ekes rap" #timeout: 30
+      - expect: "par ekes" #timeout: 30
+      - expect: "par seek" #timeout: 30
+      - expect: "park see" #timeout: 30
+      - expect: "pars eke" #timeout: 30
+      - expect: "peaks re" #timeout: 30
+      - expect: "peer ask" #timeout: 30
+      - expect: "per sake" #timeout: 30
+      - expect: "perk sea" #timeout: 30
+      - expect: "rap ekes" #timeout: 30
+      - expect: "rap seek" #timeout: 30
+      - expect: "raps eke" #timeout: 30
+      - expect: "rasp eke" #timeout: 30
+      - expect: "re peaks" #timeout: 30
+      - expect: "re speak" #timeout: 30
+      - expect: "sake per" #timeout: 30
+      - expect: "sea perk" #timeout: 30
+      - expect: "see Karp" #timeout: 30
+      - expect: "see park" #timeout: 30
+      - expect: "seek par" #timeout: 30
+      - expect: "seek rap" #timeout: 30
+      - expect: "seep ark" #timeout: 30
+      - expect: "speak re" #timeout: 30
+      - expect: "speaker" #timeout: 30
+      - expect: _EOF_  
+    exit: 0
+- case_150170710_6:
+    run: ./part3 "monitor"
+    points: 1
+    script:
+      - expect: "Ito morn"  #timeout: 30
+      - expect: "Ito norm"  #timeout: 30
+      - expect: "Mont Rio"  #timeout: 30
+      - expect: "Moor tin"  #timeout: 30
+      - expect: "Orin Tom"  #timeout: 30
+      - expect: "Rio Mont"  #timeout: 30
+      - expect: "Ron omit"  #timeout: 30
+      - expect: "Tim no or" #timeout: 30
+      - expect: "Tim on or" #timeout: 30
+      - expect: "Tim or no" #timeout: 30
+      - expect: "Tim or on" #timeout: 30
+      - expect: "Timon or"  #timeout: 30
+      - expect: "Tom Orin"  #timeout: 30
+      - expect: "Tom in or" #timeout: 30
+      - expect: "Tom iron"  #timeout: 30
+      - expect: "Tom or in" #timeout: 30
+      - expect: "in Tom or" #timeout: 30
+      - expect: "in motor"  #timeout: 30
+      - expect: "in or Tom" #timeout: 30
+      - expect: "iron Tom"  #timeout: 30
+      - expect: "it moron"  #timeout: 30
+      - expect: "minor to"  #timeout: 30
+      - expect: "monitor"   #timeout: 30
+      - expect: "morn Ito"  #timeout: 30
+      - expect: "moron it"  #timeout: 30
+      - expect: "motor in"  #timeout: 30
+      - expect: "no Tim or" #timeout: 30
+      - expect: "no or Tim" #timeout: 30
+      - expect: "no rim to" #timeout: 30
+      - expect: "no to rim" #timeout: 30
+      - expect: "nor omit"  #timeout: 30
+      - expect: "norm Ito"  #timeout: 30
+      - expect: "omit Ron"  #timeout: 30
+      - expect: "omit nor"  #timeout: 30
+      - expect: "on Tim or" #timeout: 30
+      - expect: "on or Tim" #timeout: 30
+      - expect: "on rim to" #timeout: 30
+      - expect: "on to rim" #timeout: 30
+      - expect: "onto rim"  #timeout: 30
+      - expect: "or Tim no" #timeout: 30
+      - expect: "or Tim on" #timeout: 30
+      - expect: "or Timon"  #timeout: 30
+      - expect: "or Tom in" #timeout: 30
+      - expect: "or in Tom" #timeout: 30
+      - expect: "or no Tim" #timeout: 30
+      - expect: "or on Tim" #timeout: 30
+      - expect: "rim no to" #timeout: 30
+      - expect: "rim on to" #timeout: 30
+      - expect: "rim onto"  #timeout: 30
+      - expect: "rim to no" #timeout: 30
+      - expect: "rim to on" #timeout: 30
+      - expect: "room tin"  #timeout: 30
+      - expect: "tin Moor"  #timeout: 30
+      - expect: "tin room"  #timeout: 30
+      - expect: "to minor"  #timeout: 30
+      - expect: "to no rim" #timeout: 30
+      - expect: "to on rim" #timeout: 30
+      - expect: "to rim no" #timeout: 30
+      - expect: "to rim on" #timeout: 30
+      - expect: _EOF_  
+    exit: 0  
 - cleanup:
     run: rm -f part3 part3.o part3.hi
     visible: false
